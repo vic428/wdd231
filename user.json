@@ -1,0 +1,28 @@
+{
+    "familyName" : "Archibong",
+    "dateMoved": 2024,
+    "numberOfRecords": 4,
+    "visitedByBishopric": true,
+    "members" : [
+        {
+            "name": "Archibong Victor",
+            "gender": "Male",
+            "birthDate": "Dec 18, 1996"
+        },
+        {
+            "name": "Archibong Eka",
+            "gender": "Female",
+            "birthDate": "Mar 17, 1995"
+        },
+        {
+            "name": "Archibong Ammon",
+            "gender": "Male",
+            "birthDate": "Feb 10, 2025"
+        },
+        {
+            "name": "Archibong Neto III",
+            "gender": "Male",
+            "birthDate": "Feb 10, 2025"
+        }
+    ]
+}
