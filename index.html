@@ -14,21 +14,56 @@
 <body>
     <header>
         <img src="images/home.svg" alt="Site Logo" width="10px" height="10px">
-        <span>Chamber of Commerce</span>
+        <span>Course Home Page</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li ><a href="#">News & Events</a></li>
-            <li class="active"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <div class="container">
+            <div class="about-me">
+                <h4>About Me</h4>
+                <p>I am a dedicated and curious student who enjoys exploring new ideas and learning new skills. 
+                I like working with others and believe that teamwork helps bring out the best in everyone. Creativity is something I value, as it allows me to approach challenges in unique ways. I am also hardworking and committed to achieving my goals through persistence and focus. Overall, I strive to keep growing, 
+                improving, and making a positive 4impact wherever I can.</p>
+            </div>
+
+            <div class="student-photo">
+                <h4>Student Photo</h4>
+                <img src="images/Archibong 2.jpg" alt="Photo of Archibong Victor">
+            </div>
+        </div>
+        
+        <div class="container-2">
+            <h4>Web Certificate Courses</h4>
+
+            <!---Filter Button-->
+            <div class="filters">
+                <button onclick="filterCourses('All')">All</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
+            </div>
+
+            <!--- Course Display-->
+            <div id="course-list" class="course-grid"></div>
+
+            <!-- Total Credits -->
+             <div id="total-credits"></div>
+
+        </div>
+
+
+        
     </main>
+
     <footer>
         <div class="social">
             <a href="https://www.facebook.com/victor.archibong.560/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
@@ -36,8 +71,8 @@
             <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linked In" width="16" height="16"></a>
             <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16" height="16"></a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>Last Modified</p>
+        <p>&copy;<span id="currentyear"></span> Archibong Victor Nkamenyin,Lagos, Nigeria.</p>
+        <p id="lastModified"></p>
     </footer>
     <script src="scripts/navigation.js"></script>
 </body>

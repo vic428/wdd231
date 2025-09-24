@@ -23,3 +23,24 @@
     }
 
 }
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack vertically */
+  }
+
+  .about-me, .student-photo {
+    margin-bottom: 20px; /* spacing between stacked sections */
+  }
+
+  .about-me h4, .student-photo h4 {
+    text-align: center;
+  }
+
+  .student-photo img {
+    display: block;
+    margin: 0 auto; /* center the photo */
+    max-width: 80%; /* smaller for mobile */
+  }
+}
