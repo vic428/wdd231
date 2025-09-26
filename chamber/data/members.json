@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Eye Foundation",
+    "tagline": "Your trusted partner",
+    "address": "Isaac John, Ikeja, Lagos",
+    "phone": "+234 1 448 0815",
+    "website": "https://eyefoundation.com",
+    "image": "eyefoundation.png",
+    "membership": 3,
+    "description": "A diversified conglomerate with operations in cement, sugar, and more."
+  },
+  {
+    "name": "GTBank",
+    "tagline": "Your trusted partner",
+    "address": "635 Akin Adesola St, Victoria Island, Lagos",
+    "phone": "+234 1 448 0000",
+    "website": "https://gtbank.com",
+    "image": "gtb.webp",
+    "membership": 2,
+    "description": "One of Nigeria’s leading financial institutions."
+  },
+  {
+    "name": "Innoson Motors",
+    "tagline": "Your trusted partner",
+    "address": "Plot 1-5 Umudim Industrial Layout, Nnewi (Office in Lagos)",
+    "phone": "+234 700 466 667",
+    "website": "https://innosongroup.com",
+    "image": "innoson.jpg",
+    "membership": 1,
+    "description": "Nigeria’s first indigenous car manufacturer."
+  },
+  {
+    "name": "Flutterwave",
+    "tagline": "Your trusted partner",
+    "address": "8 Providence Street, Lekki Phase 1, Lagos",
+    "phone": "+234 1 888 9595",
+    "website": "https://flutterwave.com",
+    "image": "flutterwave.webp",
+    "membership": 3,
+    "description": "A global payments technology company."
+  },
+  {
+    "name": "Andela",
+    "tagline": "Your trusted partner",
+    "address": "2nd Floor, EPIC Tower, Victoria Island, Lagos",
+    "phone": "+234 1 466 1234",
+    "website": "https://andela.com",
+    "image": "andela.jpg",
+    "membership": 2,
+    "description": "Engineering-as-a-service company matching talent to global firms."
+  },
+  {
+    "name": "Konga",
+    "tagline": "Your trusted partner",
+    "address": "No 14 Idowu Martins St, Victoria Island, Lagos",
+    "phone": "+234 1 277 7777",
+    "website": "https://konga.com",
+    "image": "konga.jpeg",
+    "membership": 1,
+    "description": "A major Nigerian e-commerce company."
+  },
+  {
+    "name": "Oando PLC",
+    "tagline": "Your trusted partner",
+    "address": "2 Ajose Adeogun St, Victoria Island, Lagos",
+    "phone": "+234 1 260 1290",
+    "website": "https://oandoplc.com",
+    "image": "oando.jpg",
+    "membership": 2,
+    "description": "An integrated energy company operating in the upstream, midstream, and downstream."
+  }
+]

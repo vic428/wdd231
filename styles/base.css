@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-/*8********************* Header ***************************/
+/********************** Header ***************************/
 header{
     display: grid;
     grid-template-columns: 24px auto 44px;
