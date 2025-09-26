@@ -4,23 +4,48 @@
     
 }
 /********************** Header ***************************/
+/* Base header styles */
 header {
   display: flex;
-  justify-content: space-between; /* logo on left, nav on right */
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #fff;
+  padding: 1rem;
+  background: #1e3a8a;
+  color: white;
 }
 
-/* Logo container */
-.logo {
+header .logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hamburger hidden on large screens */
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Logo container */
+
 .logo img {
-  height: 40px; /* adjust as needed */
+  height: 40px; 
   padding-bottom: 12px;
   margin: 0 2px;
 }

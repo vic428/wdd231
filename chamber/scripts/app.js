@@ -1,3 +1,12 @@
+// Hamburger toggle
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
+
+
 // Set copyright year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
@@ -43,7 +52,7 @@ async function loadMembers() {
         <img src="images/${member.image}" alt="${member.name} logo">
         <h3>${member.name}</h3>
         <p class="tagline">${member.tagline || ""}</p>
-        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Address:</strong> ${member.address}</p>+
         <p><strong>Phone:</strong> ${member.phone}</p>
         <p><a href="${member.website}" target="_blank">Visit Website</a></p>
         <p class="membership">Membership: ${getMembershipLevel(member.membership)}</p>
