@@ -19,14 +19,7 @@
     display: none;
   }
 
-  /* Desktop nav styles */
-  nav {
-    display: block !important; /* always show nav */
-    background: none;
-    position: static;
-    width: auto;
-  }
-
+  
   nav ul {
     display: flex;
     gap: 1.5rem;
@@ -50,7 +43,7 @@
 /* ========== Mobile / Small Screens ========== */
 @media (max-width: 768px) {
   /* Business cards stack */
-  .business-grid {
+  .business-grid .business-list {
     grid-template-columns: 1fr;
   }
 
