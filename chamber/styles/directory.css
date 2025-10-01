@@ -253,16 +253,18 @@ h1{
 .box .content {
   background: #ccc;
   flex: 1;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 /* Current Weather layout */
 .box .card {
   background: #ccc;
   flex: 1;
-  padding: 1rem;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .card #description{
@@ -396,6 +398,102 @@ h1{
 
 .business-card a:hover {
   text-decoration: underline;
+}
+
+/* ========== Benefits section =========== */
+.benefits {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+}
+
+.benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.benefit {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+}
+
+.benefit img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.benefit h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0066cc;
+}
+
+.benefit p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+
+/* ======= Spotlights ========= */
+.spotlights {
+  margin: 2rem 0;
+}
+
+.spotlights h2{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.spotlights .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.spotlights .card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.spotlights .card img {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+.spotlights .badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.badge.gold {
+  background: goldenrod;
+}
+.badge.silver {
+  background: silver;
 }
 
 
