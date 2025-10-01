@@ -77,3 +77,78 @@ function getMembershipLevel(level) {
 
 // Call function
 loadMembers();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const testimonials = document.querySelectorAll(".testimonial");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+  let current = 0;
+
+  function showTestimonial(index) {
+    testimonials.forEach((t, i) => {
+      t.classList.remove("active");
+      if (i === index) t.classList.add("active");
+    });
+  }
+
+  prev.addEventListener("click", () => {
+    current = (current === 0) ? testimonials.length - 1 : current - 1;
+    showTestimonial(current);
+  });
+
+  next.addEventListener("click", () => {
+    current = (current === testimonials.length - 1) ? 0 : current + 1;
+    showTestimonial(current);
+  });
+
+  // Auto-slide every 6 seconds
+  setInterval(() => {
+    current = (current === testimonials.length - 1) ? 0 : current + 1;
+    showTestimonial(current);
+  }, 6000);
+});
+
+//Select HTML elements in the document
+const myTown = document.querySelector('#town');
+const myDescription = document.querySelector('#description');
+const myTemperature = document.querySelector('#temperature');
+const myGraphic = document.querySelector('#graphic');
+
+//Create variables for the url
+const myKey = "2dbda7ee0023006f8c715d8422dbe049"
+const myLat = "6.601835811228054"
+const myLong = "3.351851134845131"
+
+// Construct a full path using template literals
+const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}`
+
+//Fetch current data
+async function apiFetch() {
+  try {
+    const response = await fetch(myURL);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // testing only
+      displayResults(data); // uncomment when ready
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+// Display the JSON data onto my webpage
+function displayResults(data){
+    console.log('Hello')
+    myTown.innerHTML = data.name
+    myDescription.innerHTML = data.weather[0].description
+    myTemperature.innerHTML = `${data.main.temp}&deg;F`
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    myGraphic.setAttribute('SRC', iconsrc)
+    myGraphic.setAttribute('alt', data.weather[0].description)
+
+}
+
+
+//Start the process
+apiFetch();

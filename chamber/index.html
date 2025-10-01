@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This has details of lds prophets.">
+    <meta name="keywords" content="prophets, lds leaders, called leaders">
+    <meta name="author" content="Archibong Victor">
+
+    <meta property="og:description" content="This website will serve as a resource hub for businesses in the city of Ikeja. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses..">
+    <meta property="og:image" content="https://www.ahstatic.com/photos/7577_ho_00_p_1024x768.jpg">
+    <meta property="og:title" content="Ikeja Chamber of Commerce">
+    <meta property="og:url" content="directory.html">
+
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="scripts/app.js" defer></script>
+    
+    <title>Ikeja Chamber of Commerce</title>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <img src="images/home.svg" alt="Ikeja Chamber of Commerce">
+            <span>Ikeja Chamber of Commerce</span>
+        </div>
+        <!-- Hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            ☰
+        </button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+      </header>
+
+
+      <!--Main Content-->
+      <main>
+
+        <h1>Home</h1>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="overlay">
+                <div class="hero-content">
+                    <h1>Empowering Local Businesses</h1>
+                    <p> Join our Chamber of Commerce and become part of a strong network 
+                        supporting growth, innovation, and community success.
+                    </p>
+                    <a href="#join" class="btn-primary">Join Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonials">
+            <h2>What Our Members Say</h2>
+            <div class="carousel">
+                <div class="testimonial active">
+                    <p>"Joining the Chamber was the best decision for my business. The networking opportunities are incredible."</p>
+                    <h4>- Sarah Johnson, Local Café Owner</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"I’ve gained new clients and learned so much through the events and workshops. Highly recommend!"</p>
+                    <h4>- James Lee, Marketing Consultant</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The Chamber advocates for our community and gives us a strong collective voice in business matters."</p>
+                    <h4>- Maria Lopez, Retail Store Manager</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Being a member has opened doors for partnerships I never thought possible. Truly valuable!"</p>
+                    <h4>- David Carter, Tech Startup Founder</h4>
+                </div>
+            </div>
+
+             <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </section>
+
+
+        <section class="info-grid">
+            <article class="box">
+                <h2>Events</h2>
+                <div class="content">
+                <!-- Events content -->
+                </div>
+            </article>
+
+            <article class="box">
+                <h2>Current Weather</h2>
+                <div class="card">
+                    <img id="graphic" src="" alt="">
+                    <h3 id="town"></h3>
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+            </article>
+
+            <article class="box">
+                <h2>Weather Forecast</h2>
+                <div class="content" id="forecast">
+                    <!-- JS will insert forecast here -->
+                </div>
+            </article>
+        </section>
+
+        <section class="business-cards">
+            <div class="view-toggle">
+                <button id="grid-view" class="active">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+
+            <!-- Business Display with JS from JSON File -->
+            <div id="business-list" class="business-grid"></div>
+        </section>
+
+      </main>
+
+
+      <!--Footer-->
+      <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <p><strong>Ikeja Chamber of Coommerce</strong></p>
+                <p>6 Opebi Road, Ikeja, Lagos</p>
+                <p>Email: info@ikejacc.org</p>
+                <p>Phone: (234) 9079643154</p>
+            </div>
+
+
+            <div class="social">
+                <a href="https://www.facebook.com/victor.archibong.560/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                <a href="https://github.com/vic428" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linked In" width="16" height="16"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16" height="16"></a>
+            </div>
+
+            <div class="footer-note">
+                <p>WDD231 Class Project | Archibong Victor</p>
+                <p> &copy; <span id="currentyear"></span> Archibong Victor Nkamenyin,Lagos, Nigeria.</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+      </footer>
+
+</body>
+</html>
