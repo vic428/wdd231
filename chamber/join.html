@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This has details of lds prophets.">
+    <meta name="keywords" content="prophets, lds leaders, called leaders">
+    <meta name="author" content="Archibong Victor">
+
+    <meta property="og:description" content="This website will serve as a resource hub for businesses in the city of Ikeja. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses..">
+    <meta property="og:image" content="https://www.ahstatic.com/photos/7577_ho_00_p_1024x768.jpg">
+    <meta property="og:title" content="Ikeja Chamber of Commerce">
+    <meta property="og:url" content="directory.html">
+
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    
+    <title>Ikeja Chamber of Commerce</title>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/home.svg" alt="Ikeja Chamber of Commerce"></a>
+            <span>Ikeja Chamber of Commerce</span>
+        </div>
+        <!-- Hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            ☰
+        </button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+      </header>
+
+
+      <!--Main Content-->
+      <main class="container">
+        <!-- Membership Application Form-->
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Membership Application Form</h2>
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Organizational Title <input type="text" name="orgTitle" title="Your Organizational Title (letters, hyphens, spaces only, min. 7 characters)" pattern="[A-Za-z\s\-]{7,}"></label>
+                <label>Email <input type="email" name="email" required placeholder="example@gmail.com"  title="Your Email" autocomplete="email"></label>
+                <label>Mobile Phone <input type="tel" name="phone"  autocomplete="tel" title="Your Mobile phone number" placeholder="987-555-1234" ></label>
+                <label>Organization Name <input type="text" name="organization" required autocomplete="organization" placeholder="Your Organization Name"></label>
+
+                <!-- Membership Level -->
+                <fieldset>
+                    <legend><strong>Select Membership Level</strong></legend>
+                    <label><input type="radio" name="membership" value="NP" checked> NP Membership (Non-Profit, No Fee)</label>
+                    <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                </fieldset>
+
+                <!-- Organization Description -->
+                <label>Organization Description <textarea name="description" required title="Brief description of your organization" rows="5" cols="57" maxlength="500" placeholder="Enter description here..."></textarea></label>
+            
+                <!-- Hidden Timestamp -->
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <!-- Submit -->
+                <input type="submit" value="Apply for Membership">
+
+            </form>
+        </section>
+
+        <section class="membership-section">
+            <h2>Membership Levels</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Non-Profit Membership</h3>
+                    <button onclick="openModal('modal-np')">Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <button onclick="openModal('modal-bronze')">Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <button onclick="openModal('modal-silver')">Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <button onclick="openModal('modal-gold')">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-np')">&times;</span>
+                <h3>Non-Profit Membership</h3>
+                <p>Cost: Free</p>
+                <ul>
+                    <li>Access to networking events</li>
+                    <li>Discounted workshops</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+                <h3>Bronze Membership</h3>
+                <p>Cost: $200/year</p>
+                <ul>
+                    <li>All Non-Profit benefits</li>
+                    <li>Listing in membership directory</li>
+                    <li>Access to training sessions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+                <h3>Silver Membership</h3>
+                <p>Cost: $500/year</p>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Event advertising opportunities</li>
+                    <li>Spotlight position on homepage</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+                <h3>Gold Membership</h3>
+                <p>Cost: $1,000/year</p>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Exclusive VIP events</li>
+                    <li>Free sponsorship of chamber events</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        
+
+
+      </main>
+
+
+      <!--Footer-->
+      <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <p><strong>Ikeja Chamber of Coommerce</strong></p>
+                <p>6 Opebi Road, Ikeja, Lagos</p>
+                <p>Email: info@ikejacc.org</p>
+                <p>Phone: (234) 9079643154</p>
+            </div>
+
+
+            <div class="social">
+                <a href="https://www.facebook.com/victor.archibong.560/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                <a href="https://github.com/vic428" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linked In" width="16" height="16"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16" height="16"></a>
+            </div>
+
+            <div class="footer-note">
+                <p>WDD231 Class Project | Archibong Victor</p>
+                <p> &copy; <span id="currentyear"></span> Archibong Victor Nkamenyin,Lagos, Nigeria.</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+      </footer>
+
+</body>
+</html>
