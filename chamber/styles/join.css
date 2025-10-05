@@ -64,7 +64,6 @@ nav ul {
   gap: 1.5rem; /* spacing between nav items */
   margin: 0;
   padding: 0;
-  align-items: right;
 }
 
 nav a {
