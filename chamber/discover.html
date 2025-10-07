@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +23,7 @@
      
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="scripts/app.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
     <title>Ikeja Chamber of Commerce</title>
 </head>
 <body>
@@ -50,52 +53,9 @@
       <!--Main Content-->
       <main>
         
-        <h1>Directory</h1>
-        <section class="info-grid">
-            <article class="box">
-                <h2>Events</h2>
-                <div class="content">
-                <!-- Events content -->
-                </div>
-            </article>
-
-            <article class="box">
-                <h2>Current Weather</h2>
-                <div class="content weather-grid">
-                    <div class="icon">
-                        <img src="images/cloud-sun.svg" alt="Weather Icon">
-                    </div>
-                    <div class="details">
-                        <p><strong>75°F</strong></p>
-                        <p>Partly Cloudy</p>
-                        <p>High: 85°</p>
-                        <p>Low: 52°</p>
-                        <p>Humidity: 34%</p>
-                        <p>Sunrise: 7:30am</p>
-                        <p>Sunset: 9:59pm</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="box">
-                <h2>Weather Forecast</h2>
-                <div class="content">
-                    <p>Today: <strong>90°F</strong></p>
-                    <p>Wednesday: <strong>89°F</strong></p>
-                    <p>Thursday: <strong>68°F</strong></p>
-                </div>
-            </article>
-        </section>
-
-        <section class="business-cards">
-            <div class="view-toggle">
-                <button id="grid-view" class="active">Grid View</button>
-                <button id="list-view">List View</button>
-            </div>
-
-            <!-- Business Display with JS from JSON File -->
-            <div id="business-list" class="business-grid"></div>
-        </section>
+        <h1>Discover</h1>
+        <div class="allplaces" id="allplaces"></div>
+        
 
       </main>
 
