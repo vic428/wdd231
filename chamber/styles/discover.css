@@ -1,39 +1,157 @@
 *{
-    box-sizing:border-box;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;  
 }
 
-/* Base (mobile-first) layout */
-#allplaces div {
+/* Base header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1e3a8a;
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hamburger hidden on large screens */
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Logo container */
+
+.logo img {
+  height: 40px; 
+  padding-bottom: 12px;
+  margin: 0 2px;
+}
+
+.site-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3D405B;
+}
+
+/******************Navigation *********************/
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+h1{
+    margin-left: 10px;
+    color: #3D405B;
+}
+
+#allplaces div{
   margin: 1rem 8px;
-  border: 1px solid #999;
   background-color: #eee;
   border-radius: 8px;
   overflow: hidden;
 
   display: grid;
-  grid-template-areas:
+  grid-template-areas: 
     "name"
     "photograph"
     "description"
-    "location";
+    "location"
+    ;
 }
 
-#allplaces div h2 {
-  margin: 1rem 10px;
-  grid-area: name;
+ #allplaces div .name {
+    grid-area: name;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  #allplaces div .description {
+    grid-area: description;
+    color: #555;
+  }
+
+  #allplaces div .location {
+    grid-area: location;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+    #visit-message {
+      background-color: #f0f4ff;
+      border: 1px solid #c3d0f5;
+      color: #1e3a8a;
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+
+
+  /* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
 }
 
-#allplaces div img {
-  width: 300px;
-  grid-area: photograph;
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
 }
 
-#allplaces div p {
-  margin: 1rem 10px;
-  grid-area: description;
+.footer-info,
+.social,
+.footer-note {
+  font-size: 0.9rem;
 }
 
-#allplaces div address {
-  margin: 1rem 10px;
-  grid-area: location;
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social a img {
+  width: 30px;
+  height: 30px;
+  color: #fff;
 }

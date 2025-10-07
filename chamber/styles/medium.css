@@ -1,27 +1,31 @@
-/* --- Medium screens (tablet) --- */
 @media only screen and (min-width: 38rem) {
   #allplaces div {
-   
     grid-template-areas:
       "photograph name"
       "photograph description"
       "photograph location";
-   
+    gap: 0.5rem 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
   }
 
   #allplaces div img {
     width: 300px;
-    
   }
+
+  
 }
+
 
 /* --- Large screens --- */
 @media only screen and (min-width: 64rem) {
   #allplaces {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
   }
+
+  
 
   
 }
