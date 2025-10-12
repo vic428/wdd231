@@ -1,0 +1,52 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 1.5rem;
+    margin: 10px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  nav.open {
+    transform: translateY(0);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    background-color: #2563eb;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .donate-btn {
+    display: inline-block;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+}
