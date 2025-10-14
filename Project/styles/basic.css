@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: white;
@@ -198,6 +201,270 @@ header {
   font-size: 1rem;
 }
 
+/* --------- About Us --------*/
+.about {
+  display: flex;
+  flex-direction: column; /* stack title above content */
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  margin: 20px;
+}
+
+/* ===== About Heading ===== */
+.about h1 {
+  width: fit-content;
+  margin: 0 auto 2rem auto;  /* center horizontally */
+  text-align: center;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+}
+
+/* Always-visible underline */
+.about h1::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #f59e0b;
+  border-radius: 2px;
+  animation: underlineGrow 0.8s ease forwards;
+}
+
+/* ===== Parent Container for Images & Text ===== */
+.about-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* responsive stacking */
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* ===== Image Layout ===== */
+.about-images {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Decorative squares */
+.about-images::before,
+.about-images::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 0.75rem;
+}
+
+/* Top-left orange square */
+.about-images::before {
+  width: 100px;
+  height: 100px;
+  background-color: #f59e0b; /* Tailwind orange-500 */
+  top: 0;
+  left: 0;
+  transform: translate(-25%, -25%);
+  z-index: 1;
+}
+
+/* Bottom-right blue square */
+.about-images::after {
+  width: 150px;
+  height: 150px;
+  background-color: #1e3a8a; /* Tailwind blue-900 */
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 25%);
+  z-index: 1;
+}
+
+/* Main image */
+.about-images img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+  object-fit: cover;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Text Section ===== */
+.about-text {
+  max-width: 650px;
+  text-align: right;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+/* ---------- Our Program Section --------*/
+.programs {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f9f7f5;
+}
+
+.programs h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+  font-weight: 300;
+  margin: 0 auto 2rem auto;  /* center horizontally */
+  position: relative;
+  display: inline-block;
+}
+
+.programs h1::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #f59e0b;
+  border-radius: 2px;
+  animation: underlineGrow 0.8s ease forwards;
+}
+
+.programs p {
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+/* Container for the 3 cards */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Individual card */
+.service {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Icon container */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border: 2px solid #f59e0b;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box i {
+  font-size: 1.5rem;
+  color: #f59e0b;
+  margin: 10px;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900;
+}
+
+/* Headings and text */
+.service h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.service p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* List */
+.service ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  margin: 30px;
+}
+
+.service ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  text-align: left;
+  
+
+}
+
+.service ul i {
+  margin-right: 0.5rem;
+  
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.btn.orange {
+  background-color: #f59e0b;
+  width: 200px;
+  color:#f1f5f9;
+}
+
+.btn.blue {
+  background-color: #1e3a8a;
+  width: 200px;
+  color:#f1f5f9;
+}
+
+
+
+
+
+
+
+
 /* ====== FOOTER STYLES ====== */
 footer {
   background-color: #1e3a8a; /* dark blue background */
@@ -215,17 +482,18 @@ footer {
   gap: 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 2rem;
-  align-items: center;
-  justify-content: center;
+  justify-items: center;
+  align-items: start;
 }
 
 /* Brand Section */
 .footer-brand {
   max-width: 300px;
+  margin-left: 7rem;
 }
 
 .footer-logo {
-  width: 150px;
+  width: 250px;
   margin-bottom: 1rem;
 }
 
@@ -240,6 +508,11 @@ footer {
 .footer-socials {
   display: flex;
   gap: 1rem;
+}
+
+.footer-socials img {
+  filter: brightness(0) invert(1); /* turns black SVGs white */
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .footer-socials a {

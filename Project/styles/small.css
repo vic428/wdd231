@@ -50,3 +50,35 @@
     text-align: center;
   }
 }
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .about-parent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-images {
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-images img:nth-child(2) {
+    width: 260px;
+    height: 260px;
+  }
+
+  .about-images img:nth-child(1) {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-images img:nth-child(3) {
+    width: 120px;
+    height: 120px;
+  }
+}

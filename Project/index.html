@@ -12,6 +12,12 @@
     <meta property="og:title" content="Website for the Access Point Foundation">
     <meta property="og:url" content="index.html">
 
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" 
+    crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles/basic.css">
     <link rel="stylesheet" href="styles/small.css">
 
@@ -19,8 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
     <script src="scripts/app.js" defer></script>
 
     
@@ -44,10 +49,10 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Programs</a></li>
-                    <li><a href="index.html">Team</a></li>
-                    <li><a href="index.html" class="donate-btn">Donate</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
                 </ul>
             </nav>
         </header>
@@ -66,6 +71,71 @@
                     <a href="#" class="btn btn-secondary"> Apply For Support</a>
                 </div>
                 <p class="subtext">Join our community and help students succeed today</p>
+            </div>
+        </section>
+
+        <!--------About Us Section ------->
+        <section class="about" id="about">
+            <h1>About Us</h1>
+            <div class="about-parent">
+                <div class="about-images">
+                    <img src="images/rectangle3.svg" alt="Group photo">
+                </div>
+
+                <div class="about-text">
+                    <h2>Opening Doors of Opportunity for Every BYU-<br />
+                        Pathway Student</h2>
+                    <p>
+                        Access Point was founded on the belief that every student deserves the resources to succeed. 
+                        We partner with BYU-Pathway students who face financial barriers, providing them with laptops, 
+                        tuition assistance, and internet connectivity. Our mission is simple: remove obstacles so students can 
+                        focus on what matters most—their education and future.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--------- Our Program ------->
+        <section class="programs" id="programs">
+            <h1>Our Programs</h1>
+            <p>We offer three core support programs designed to remove barriers and empower students to succeed.</p>
+
+            <div class="services">
+                <div class="service">
+                    <div class="icon-box"><i class="fa-solid fa-wifi"></i></div>
+                    <h2>Data Subscription</h2>
+                    <p>We provide quality laptops to students who need them to complete their coursework and succeed in their online studies.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check-double"></i> Monthly data packages</li>
+                        <li><i class="fa-solid fa-check-double"></i> Reliable connectivity</li>
+                        <li><i class="fa-solid fa-check-double"></i> Mobile hotspot options</li>
+                    </ul>
+                    <button class="btn orange">Apply</button>
+                </div>
+        
+                <div class="service">
+                    <div class="icon-box"><i class="fa-solid fa-laptop"></i></div>
+                    <h2>Laptop Support</h2>
+                    <p>Financial assistance to help cover tuition costs, ensuring money is never a barrier to education.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check-double"></i> Quality refurbished laptops</li>
+                        <li><i class="fa-solid fa-check-double"></i> Technical setup assistance</li>
+                        <li><i class="fa-solid fa-check-double"></i> Basic software included</li>
+                    </ul>
+                    <button class="btn blue">Apply</button>
+                </div>
+                
+                <div class="service">
+                    <div class="icon-box"><i class="fa-solid fa-coins"></i></div>
+                    <h2>Tuition Aid</h2>
+                    <p>Financial assistance to help cover tuition costs, ensuring money is never a barrier to education.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check-double"></i> Semester tuition support</li>
+                        <li><i class="fa-solid fa-check-double"></i> Scholarship opportunities</li>
+                        <li><i class="fa-solid fa-check-double"></i> Flexible payment plans</li>
+                    </ul>
+                    <button class="btn blue">Apply</button>
+                </div>
             </div>
         </section>
 
@@ -88,9 +158,10 @@
                     their dreams through Education support.
                 </p>
                 <div class="footer-socials">
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/victor.archibong.560/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                    <a href="https://github.com/vic428" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linked In" width="16" height="16"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp-brands-solid.svg" alt="whatsapp" width="19" height="19"></a>
                 </div>
             </div>
 
@@ -127,9 +198,6 @@
 
 
     </footer>
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/a2e0b7c6ce.js" crossorigin="anonymous"></script>
-
 
 </body>
 </html>

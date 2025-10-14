@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="the Access point NGO website.">
+    <meta name="keywords" content="access point, scholarships, donations">
+    <meta name="author" content="Archibong Victor">
+
+    <meta property="og:description" content="This website will serve as the official page of the Access point scholarship foundation">
+    <meta property="og:image" content="images/archibong.jpg">
+    <meta property="og:title" content="Website for the Access Point Foundation">
+    <meta property="og:url" content="index.html">
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/donate.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/faq.js" defer></script>
+
+    
+    <title>Project Website Plan</title>
+</head>
+<body>
+    <main>
+        <!-----------Header/Navbar------->
+        <header>
+            <div class="logo">
+                <img src="images/accesspoint-logo.svg" alt="Access Point Logo">
+            </div>
+
+            <!-- Hamburger Menu Icon --->
+             <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="apply.html">FAQ</a></li>
+                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--------- Apply Section ------->
+        <section class="apply">
+            <h1>Apply for Scholarship</h1>
+            <p>Take the first step towards achieving your educational goals. Fill out this form to start your scholarship application.</p>
+
+  <form class="apply-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="John" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Doe" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="johndoe@gmail.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="program">Current Program or Institution:</label>
+      <input type="text" id="program" placeholder="BYU-Pathway Worldwide" required>
+    </div>
+
+    <div class="form-group">
+      <label for="supportType">Type of Scholarship:</label>
+      <select id="supportType" required>
+        <option value="">Select scholarship type</option>
+        <option value="tuition">Tuition Support</option>
+        <option value="laptop">Laptop Grant</option>
+        <option value="data">Data Subscription</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="reason">Why are you applying for this scholarship?</label>
+      <textarea id="reason" rows="4" placeholder="Briefly describe your reason..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Application</button>
+
+    <p class="form-note">
+      By submitting this form, you'll be redirected to our full application portal where you can provide additional details about your needs and circumstances.
+    </p>
+  </form>
+</section>
+
+
+
+    </main>
+
+    
+       
+     
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-brand">
+                <img src="images/accesspoint-logo-white.svg" alt="Access Point Logo" class="footer-logo"/>
+                <p>
+                    Empowering BYU-Pathway students to achieve 
+                    their dreams through Education support.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/victor.archibong.560/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                    <a href="https://github.com/vic428" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linked In" width="16" height="16"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp-brands-solid.svg" alt="whatsapp" width="19" height="19"></a>
+                </div>
+            </div>
+
+            <!--Quick Links-->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Links -->
+            <div class="footer-links">
+                <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                        <li><a href="#">Regulatory compliance</a></li>
+                    </ul>
+            </div>
+        </div>  
+
+        <div class="footer-bottom">
+            <p> &copy; <span id="currentyear"></span> Access Point. All rights reserved</p>
+            <p id="lastModified"></p>
+        </div>
+
+
+
+    </footer>
+
+</body>
+</html>
