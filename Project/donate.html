@@ -51,10 +51,9 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="apply.html">Apply</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="apply.html">FAQ</a></li>
                     <li><a href="donate.html" class="donate-btn">Donate</a></li>
                 </ul>
             </nav>
@@ -65,7 +64,7 @@
             <h2>Support Access Point Foundation</h2>
             <p>Your generous donation helps provide laptops, tuition assistance, and data support to BYU-Pathway students in need.</p>
 
-            <form method="POST" action="thankyou.html" class="designOne">
+            <form method="GET" action="thankyou.html" class="designOne">
                 <!-- Donor Information -->
                 <label>Full Name
                     <input type="text" name="fullname" required autocomplete="name" placeholder="John Doe" title="Your Full Name">
@@ -84,7 +83,7 @@
                 </label>
 
                 <!-- Donation Details -->
-                <fieldset>
+                <fieldset class="amount-options">
                     <legend><strong>Select Donation Amount</strong></legend>
                     <label><input type="radio" name="amount" value="2000"> ₦2,000</label>
                     <label><input type="radio" name="amount" value="5000" checked> ₦5,000</label>
@@ -95,7 +94,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="frequency-options">
                     <legend><strong>Donation Frequency</strong></legend>
                     <label><input type="radio" name="frequency" value="One-time" checked> One-time</label>
                     <label><input type="radio" name="frequency" value="Monthly"> Monthly</label>
@@ -118,13 +117,7 @@
                     <textarea name="message" rows="4" cols="57" maxlength="400" placeholder="E.g. In support of students who need laptops..."></textarea>
                 </label>
 
-                <!-- Additional Options -->
-                <label><input type="checkbox" name="anonymous"> Make this donation anonymous</label>
-                <label><input type="checkbox" name="subscribe"> Subscribe to Access Point updates</label>
-
-                <!-- Consent -->
-                <label><input type="checkbox" name="consent" required> I consent to my information being processed for this donation.</label>
-
+    
                 <!-- Hidden Timestamp -->
                 <input type="hidden" name="timestamp" id="timestamp">
 

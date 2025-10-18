@@ -18,10 +18,9 @@
     integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" 
     crossorigin="anonymous">
 
-   
+    <link rel="stylesheet" href="styles/basic.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/apply.css">
-    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/team.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script src="scripts/app.js" defer></script>
-    <script src="scripts/results.js" defer></script>
-
+    <script src="scripts/team.js" defer></script>
 
     
     <title>Project Website Plan</title>
@@ -40,7 +38,7 @@
         <!-----------Header/Navbar------->
         <header>
             <div class="logo">
-                <img src="images/accesspoint-logo.svg" alt="Access Point Logo">
+                <img src="images/Logo 4.png" alt="Access Point Logo">
             </div>
 
             <!-- Hamburger Menu Icon --->
@@ -61,59 +59,83 @@
             </nav>
         </header>
 
-        <!--------- Apply Section ------->
-        <section class="apply">
-            <h1>Apply for Scholarship</h1>
-            <p>Take the first step towards achieving your educational goals. Fill out this form to start your scholarship application.</p>
 
-            <form method="GET" action="thankyou.html" class="apply-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="fullname">First Name:</label>
-                    <input type="text" id="firstName" placeholder="John" required>
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <p>Dedicated professionals working together to empower students and transform lives.</p>
+
+            <div class="team-container">
+                <!-- Team Member 1 -->
+                <div class="team-card" data-member="john">
+                    <img src="images/archibong.jpg" alt="John Doe">
+                    <div class="team-info">
+                        <h3>Archibong Victor</h3>
+                        <p>Group Founder</p>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="last">Last Name:</label>
-                    <input type="text" id="lastName" placeholder="Doe" required>
+                <!-- Team Member 2 -->
+                <div class="team-card" data-member="david">
+                    <img src="images/Adoram-tom.png" alt="David Smith">
+                    <div class="team-info">
+                        <h3>Adoram Tom</h3>
+                        <p>Co-Founder</p>
+                    </div>
                 </div>
-              </div>
 
-              <div class="form-group">
-                <label for="email">Email:</label>
-                  <input type="email" id="email" placeholder="johndoe@gmail.com" required>
-              </div>
+                <!-- Team Member 3 -->
+                <div class="team-card" data-member="grace">
+                    <img src="images/thompson.jpeg" alt="Grace Johnson">
+                    <div class="team-info">
+                        <h3>Paul Thompson</h3>
+                        <p>Co-Founder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-              <div class="form-group">
-                <label for="program">Current Program or Institution:</label>
-                  <input type="text" id="program" placeholder="BYU-Pathway Worldwide" required>
-              </div>
+        <!-- ====== Modals ====== -->
+        <div id="john" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="images/archibong.jpg" alt="Archibong Victor">
+                <h3>Archibong Victor</h3>
+                <p>Founder</p>
+                <div class="modal-socials">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:johndoe@example.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
 
-    <div class="form-group">
-      <label for="supportType">Type of Scholarship:</label>
-      <select id="supportType" required>
-        <option value="">Select scholarship type</option>
-        <option value="tuition">Tuition Support</option>
-        <option value="laptop">Laptop Grant</option>
-        <option value="data">Data Subscription</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
+        <div id="david" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="images/Adoram-tom.png" alt="Adoram Tom">
+                <h3>Adorma Tom</h3>
+                <p>Co-Founder</p>
+                <div class="modal-socials">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:david@example.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
 
-    <div class="form-group">
-      <label for="reason">Why are you applying for this scholarship?</label>
-      <textarea id="reason" rows="4" placeholder="Briefly describe your reason..." required></textarea>
-    </div>
-
-    <button type="submit" class="submit-btn">Submit Application</button>
-
-    <p class="form-note">
-      By submitting this form, you'll be redirected to our full application portal where you can provide additional details about your needs and circumstances.
-    </p>
-  </form>
-</section>
-
-
+        <div id="grace" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="images/thompson.jpeg" alt="Thompson Paul">
+                <h3>Paul Thompson</h3>
+                <p>Co-Founder</p>
+                <div class="modal-socials">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:grace@example.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
 
     </main>
 

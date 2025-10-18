@@ -1,0 +1,139 @@
+/* ------------------- Thank You Section ------------------- */
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: #fff7ed; /* soft amber background */
+  text-align: center;
+  padding: 2rem;
+}
+
+.thankyou h1 {
+  font-size: 2.5rem;
+  color: #f59e0b;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#results {
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #1f2937;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#results:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional animation for smooth entry */
+.thankyou {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+
+/* ------------------- Header Section ------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 0.8px solid #f59e0b;
+}
+
+.logo img {
+  width: 130px;
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline hover animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #f59e0b;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f59e0b;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active nav link */
+.nav-links a.active {
+  color: #f59e0b;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Donate button */
+.donate-btn {
+  background-color: #f59e0b;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.donate-btn:hover {
+  background-color: #fff;
+  color: #f59e0b;
+  transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .thankyou h1 {
+    font-size: 2rem;
+  }
+
+  #results {
+    padding: 1.5rem 1.8rem;
+    font-size: 1rem;
+  }
+}

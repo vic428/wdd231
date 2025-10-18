@@ -13,3 +13,15 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 //Display last modified date
 document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const firstVisit = localStorage.getItem("visited");
+
+  if (!firstVisit) {
+    alert("Welcome to Access Point Foundation!");
+    localStorage.setItem("visited", "true");
+  } else {
+    console.log("Welcome back!");
+  }
+});
