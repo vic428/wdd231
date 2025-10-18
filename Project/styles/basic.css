@@ -125,7 +125,7 @@ header {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url('images/hero-image.jpg') no-repeat center center/cover;
+  background: url('../images/hero-image.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
   justify-content: center;
